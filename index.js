@@ -5,7 +5,7 @@ function isFunction(funktion) {
 }
 
 // Default to complaining loudly when things don't go according to plan.
-var logger = console.error.bind(console);
+var logger = console.trace.bind(console);
 
 // Keep initialization idempotent.
 function shimmer(options) {
